@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function ds(){
+	var im=document.getElementById("o");
+	var ds=new Date();
+	//改变url以便于验证码进行
+	im.src="./image.jsp?"+ds.getSeconds();
+}
+</script>
+</head>
+<body>
+<img src="./image.jsp" id="o" onclick="return ds()">
+</body>
+</html>
