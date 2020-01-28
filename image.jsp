@@ -3,6 +3,7 @@
 <%@ page import="java.util.*,javax.imageio.ImageIO,javax.servlet.*,javax.servlet.http.*" %>
 <%@ page import="javax.servlet.annotation.WebServlet,java.awt.*,java.awt.image.*,java.io.IOException" %>
 <%
+//基于原生JSP实现的图片验证码
 //设置脚本返回content-type为image/jpeg
 response.setContentType("image/jpeg");
 //设置图片的宽和高
